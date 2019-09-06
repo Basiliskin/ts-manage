@@ -1,0 +1,2 @@
+ - class descriptor
+ - class state
