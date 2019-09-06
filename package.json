@@ -1,0 +1,41 @@
+{
+  "name": "ts-manage",
+  "version": "1.0.0",
+  "description": "- class descriptor\r  - class state#\u0000 \u0000C\u0000l\u0000a\u0000s\u0000s\u0000 \u0000D\u0000e\u0000s\u0000c\u0000r\u0000i\u0000p\u0000t\u0000o\u0000r\u0000 \u0000a\u0000n\u0000d\u0000 \u0000S\u0000t\u0000a\u0000t\u0000e\u0000\r\u0000 \u0000",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "test": "jest --config jestconfig.json",
+    "build": "tsc",
+    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+    "lint": "tslint -p tsconfig.json",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm test && npm run lint",
+    "preversion": "npm run lint",
+    "version": "npm run format && git add -A src",
+    "postversion": "git push && git push --tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Basiliskin/ts-manage.git"
+  },
+  "keywords": ["Angular", "Typescript","Descriptor", "State"],
+  "author": "Dimitry Katz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Basiliskin/ts-manage/issues"
+  },
+  "homepage": "https://github.com/Basiliskin/ts-manage#readme",
+  "devDependencies": {
+    "@types/jest": "^24.0.18",
+    "jest": "^24.9.0",
+    "prettier": "^1.18.2",
+    "ts-jest": "^24.0.2",
+    "tslint": "^5.19.0",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^3.6.2"
+  },
+  "files": [
+    "lib/**/*"
+  ]
+}
