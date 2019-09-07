@@ -1,6 +1,6 @@
 {
-  "name": "ts-descriptor",
-  "version": "1.0.4",
+  "name": "angular-ts-descriptor",
+  "version": "1.0.3",
   "description": "- class descriptor",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
