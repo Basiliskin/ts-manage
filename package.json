@@ -19,7 +19,12 @@
     "type": "git",
     "url": "git+https://github.com/Basiliskin/ts-manage.git"
   },
-  "keywords": ["Angular", "Typescript","Descriptor", "State"],
+  "keywords": [
+    "Angular",
+    "Typescript",
+    "Descriptor",
+    "State"
+  ],
   "author": "Dimitry Katz",
   "license": "ISC",
   "bugs": {
