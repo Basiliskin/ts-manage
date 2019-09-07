@@ -80,7 +80,7 @@ function objectType(obj:any):BaseValueType
 export function Descriptor(descriptor:Array<BaseParam>,property:Array<string>) {
   return function <T extends { new(...args: any[]): {} }>(constructor: T) {
       
-      const a = new constructor();
+      const a:any = new constructor();
       if(!property)
       {
         property =  Object.getOwnPropertyNames(a);
