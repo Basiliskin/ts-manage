@@ -1,7 +1,7 @@
 {
-  "name": "angular-ts-manage",
+  "name": "ts-descriptor",
   "version": "1.0.3",
-  "description": "- class descriptor\r  - class state",
+  "description": "- class descriptor",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {

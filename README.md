@@ -6,11 +6,12 @@
  @Descriptor([
   new BaseParam(BaseValueType.Undefined,'$base',BaseValueProp.Disabled),
   new BaseParam(BaseValueType.Undefined,'$user',BaseValueProp.Input)
-],[
+],[ // order 
   'id','name','description','makat','color','test','date','time','sum','parent','value'
 ])
 class CustomValue 
 {
+  // overwrite class descritor
   @BaseDescriptors([
     new BaseParam(BaseValueType.Text,undefined,BaseValueProp.Disabled,'color'),
     new BaseParam(BaseValueType.Custom,'$user',BaseValueProp.Input,'color')
